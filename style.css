@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body {
+  background-image: url("https://scontent.ftpe8-4.fna.fbcdn.net/v/t39.30808-6/487483896_2048172372357707_2029741928617723411_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=UvTc53Ppj5kQ7kNvwEDU6XO&_nc_oc=AdlIQZWUrumKOnYR_ypa5G3_sckO6FQRXyri58xEeIDY4nh3723MarmKVy4fiZY1hnU&_nc_zt=23&_nc_ht=scontent.ftpe8-4.fna&_nc_gid=bWUOLoldCJDjXqAX-gRsqQ&oh=00_AfKV0g3J6lA2vPWwehusOYcYM6GbwcHtH3hZTjDSEiMwUA&oe=68213698");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/*body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6d6;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}*/
+#scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/*#buddha {
+  width: 200px;
+  height: auto;
+}*/
+#person {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+/*中間光芒*/
+/*#light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 200, 0.8), transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s;
+}*/
+#light {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(ellipse at center top, white 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.1) 60%, transparent 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-out;
+  z-index: 5;
+  mask-image: radial-gradient(ellipse at center top, white, transparent 80%);
+}
+
+#quoteBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff8dc;
+  padding: 20px;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}
+
+#quoteText {
+  font-size: 1.5em;
+  color: #333;
+}
