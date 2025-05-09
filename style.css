@@ -77,7 +77,7 @@ body {
   z-index: 10;
 }
 
-#quoteText {
+/* #quoteText {
   //font-size: 1.5rem;
   --min-size: 12;
   --max-size: 48;
@@ -91,4 +91,13 @@ body {
     var(--max-size) * 1px
   );
   color: #333;
+} */
+#quoteText {
+  font-size: 80px;
+}
+
+@media screen and (max-width: 900px) {
+  #quoteText {
+    font-size: 30px;
+  }
 }
