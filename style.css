@@ -27,8 +27,8 @@ body {
   height: auto;
 }*/
 #person {
-  width: 120px;
-  height: auto;
+  width: auto;
+  height: 70%;
   position: absolute;
   bottom: 0px;
   left: 50%;
