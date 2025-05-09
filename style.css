@@ -94,10 +94,12 @@ body {
 } */
 #quoteText {
   font-size: 80px;
+  color: #333;
 }
 
 @media screen and (max-width: 900px) {
   #quoteText {
     font-size: 30px;
+    color: #333;
   }
 }
